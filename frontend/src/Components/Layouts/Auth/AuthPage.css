@@ -1,0 +1,135 @@
+/* Ensure body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .background {
+    
+  }
+  /* Center the auth container in the viewport */
+  .auth-container {
+    width: 800px;
+    height: 500px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the container */
+  }
+  
+  /* Additional adjustments for other components */
+  .form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.6s ease-in-out;
+    background: #ffffff;
+  }
+  
+  .sign-in-container {
+    left: 0;
+  }
+  
+  .sign-up-container {
+    right: 0;
+    transform: translateX(100%);
+  }
+  
+  .auth-container.active .sign-in-container {
+    transform: translateX(100%);
+  }
+  
+  .auth-container.active .sign-up-container {
+    transform: translateX(0);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #231cb7, #d32f2f);
+    color: #ffffff;
+    z-index: 100;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .auth-container.active .overlay {
+    transform: translateX(-100%);
+  }
+  
+  .form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 12px;
+    background: #b71c1c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .form button:hover {
+    background: #d32f2f;
+  }
+  
+  .overlay h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .overlay p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .overlay button {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .overlay button:hover {
+    background: #ffffff;
+    color: #b71c1c;
+  }
+  
