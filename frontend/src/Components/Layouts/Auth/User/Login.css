@@ -1,0 +1,77 @@
+.login-container{
+  
+}
+.form-control-rounded {
+    
+   
+    transition: all 0.3s ease;
+  }
+
+
+  
+  .form-control-rounded:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(0, 204, 0, 0.2);
+  }
+  
+  /* Positioning of Floating Label */
+  .position-relative .form-label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    transition: all 0.3s ease;
+  }
+  
+  /* Floating Label (Material UI style) */
+  .form-control-rounded:focus ~ .form-label,
+  .form-control-rounded:not(:placeholder-shown) ~ .form-label {
+    top: -15px;
+    left: 0;
+    font-size: 0.75rem;
+    color: #4CAF50;
+    font-weight: 600;
+  }
+  
+  /* Style for the error and success alerts */
+  .alert {
+    font-size: 1rem;
+  }
+  
+  /* Material-like hover and focus effect */
+  .form-control-rounded:hover {
+    border-color: #66bb6a;
+  }
+  
+  button {
+    border-radius: 25px;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+  }
+  
+  .forgot-password {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .text-center {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  

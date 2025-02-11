@@ -1,0 +1,98 @@
+/* Signup Container */
+.signup-container, .login-container {
+  
+    min-height: 100vh;
+    
+  }
+  
+  /* Signup Card */
+  .signup-card {
+    
+    border-radius: 15px;
+    background: none;
+    width: 100%;
+    border: none;
+    max-width: 500px;
+  }
+  
+  /* Form Inputs */
+  .form-input {
+    
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(206, 228, 215, 0.5);
+  }
+  
+  /* OTP Inputs */
+  .otp-input {
+    width: 18%;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .otp-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+  }
+  
+  /* Buttons */
+  .otp-button,
+  .verify-button,
+  .submit-button,
+  .login {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .otp-button, .verify-button{
+    background-color: #667eea !important;
+    border: none;
+  }
+  
+  .otp-button:hover {
+    background-color: #5a6fd1;
+  }
+  
+  .verify-button {
+    background-color: #4caf50;
+    border: none;
+  }
+  
+  .verify-button:hover {
+    background-color: #43a047;
+  }
+  
+  .submit-button, .login {
+    background-color: #764ba2;
+    border: none;
+    &:hover{
+      background-color: #6a3d8e;
+    }
+  }
+  
+  .submit-button:hover {
+    background-color: #6a3d8e;
+  }
+  
+  /* Alerts */
+  .alert {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  
+  
